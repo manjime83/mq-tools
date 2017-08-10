@@ -37,7 +37,7 @@ public class AS400SERVER implements Runnable {
 			MQEnvironment.port = Integer.parseInt(properties.getProperty("port"));
 			MQEnvironment.channel = properties.getProperty("channel");
 			MQEnvironment.userID = properties.getProperty("userID");
-			
+
 			MQEnvironment.properties.put(MQConstants.TRANSPORT_PROPERTY, MQConstants.TRANSPORT_MQSERIES);
 
 			queueManagerName = properties.getProperty("queue.manager");
@@ -78,7 +78,15 @@ public class AS400SERVER implements Runnable {
 						continue;
 					}
 
-					File responseFile = new File(AS400SERVER.class.getSimpleName(), service + ".txt");
+					int index = 0;
+					try {
+						index = Integer.valueOf(request.substring(121, 123));
+					} catch (StringIndexOutOfBoundsException | NumberFormatException e) {
+						e.printStackTrace();
+						continue;
+					}
+
+					File responseFile = new File(AS400SERVER.class.getSimpleName(), service + "." + index + ".txt");
 
 					if (requestMessage.replyToQueueName.trim().isEmpty()) {
 						System.err.println("replyToQ not set");

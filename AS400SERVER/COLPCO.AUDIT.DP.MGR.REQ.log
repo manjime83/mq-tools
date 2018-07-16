@@ -1,79 +1,21 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-7eca0217-0416-41c0-871b-ab400a79fc47</aud:masterId>
-			<aud:point>MSG_REQ_SRV</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.512</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.512</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description />
-			<aud:errorCode />
-			<aud:message>
-				<audit>
-					<paymentOtherLoanSetRq xmlns="http://www.colpatria.com/esb/services/payment/as/paymentOtherLoanSet/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-						<requestHeader>
-							<esbHeader>
-								<transactionId>1234567890123456789</transactionId>
-								<serviceCode>PAGOLOA01</serviceCode>
-								<requestUser>BDPARRAGB</requestUser>
-								<requestSystem>BVI</requestSystem>
-								<host>1.1.1.1</host>
-								<operationCountry>57</operationCountry>
-								<transactionDate>2017-08-01</transactionDate>
-								<transactionTime>16:16:16</transactionTime>
-								<institutionCode>19</institutionCode>
-								<usernameToken>
-									<userName>sadmin</userName>
-									<password>Desarrollo2010</password>
-								</usernameToken>
-							</esbHeader>
-						</requestHeader>
-						<otherLoanSetRq>
-							<customer>
-								<idType>C</idType>
-								<idNumber>******8746</idNumber>
-							</customer>
-							<originAccount>
-								<originAccountType>1</originAccountType>
-								<originAccountNumber>************8965</originAccountNumber>
-							</originAccount>
-							<loanAccount>
-								<loanType>3</loanType>
-								<loanNumber>******5555</loanNumber>
-							</loanAccount>
-							<amount>10000000.99</amount>
-						</otherLoanSetRq>
-					</paymentOtherLoanSetRq>
-				</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-7eca0217-0416-41c0-871b-ab400a79fc47</aud:masterId>
+			<aud:masterId>idg752-a3b2acce-d2ca-4f12-959b-129a2f53fe14</aud:masterId>
 			<aud:point>MSG_REQ_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.512</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.515</aud:endDate>
+			<aud:startDate>2018-07-03T16:58:02.174</aud:startDate>
+			<aud:endDate>2018-07-03T16:58:02.176</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description />
 			<aud:errorCode />
 			<aud:message>
-				<audit>RQ0057019BVI PAGOLOA01             1.1.1.1                                 BDPARRAGB                               2017080116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746001****************    003****************    00000001000000099</audit>
+				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -84,20 +26,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-7eca0217-0416-41c0-871b-ab400a79fc47</aud:masterId>
+			<aud:masterId>idg752-a3b2acce-d2ca-4f12-959b-129a2f53fe14</aud:masterId>
 			<aud:point>MSG_RES_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.515</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.520</aud:endDate>
+			<aud:startDate>2018-07-03T16:58:02.176</aud:startDate>
+			<aud:endDate>2018-07-03T16:58:02.181</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description>Transaccion Exitosa.</aud:description>
 			<aud:errorCode>SUC</aud:errorCode>
 			<aud:message>
-				<audit>RS0057019BVI PAGOLOA01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exitosa.                                                                                                                                                                                        993456545678909                                 C*************87472018010112101000014  AA</audit>
+				<audit>RS0057019BVI QRYLADS01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exitosa.                                                                                                                                                                                        993456545678909                                 C*************8747                         DESC2001000000099                         DESC3001000000088                         DESC4001000000077                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -107,21 +49,21 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-7eca0217-0416-41c0-871b-ab400a79fc47</aud:masterId>
+			<aud:masterId>idg752-a3b2acce-d2ca-4f12-959b-129a2f53fe14</aud:masterId>
 			<aud:point>MSG_RES_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.512</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.522</aud:endDate>
+			<aud:startDate>2018-07-03T16:58:02.174</aud:startDate>
+			<aud:endDate>2018-07-03T16:58:02.183</aud:endDate>
 			<aud:state>02</aud:state>
 			<aud:description />
 			<aud:errorCode>200</aud:errorCode>
 			<aud:message>
 				<audit>
-					<tns:paymentOtherLoanSetRs xmlns:tns="http://www.colpatria.com/esb/services/payment/as/paymentOtherLoanSet/">
+					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
 						<tns:responseHeader>
 							<tns:status>
 								<tns:statusCode>Success</tns:statusCode>
@@ -132,75 +74,27 @@
 								<tns:transactionTime>14:32:29</tns:transactionTime>
 							</tns:esbHeader>
 						</tns:responseHeader>
-						<tns:otherLoanSetRs>
+						<tns:termsConditionsAdsGetRs>
 							<tns:customer>
 								<tns:idType>C</tns:idType>
 								<tns:idNumber>******8747</tns:idNumber>
 							</tns:customer>
-							<tns:postDate>2018-01-01</tns:postDate>
-							<tns:postHour>12:10:10</tns:postHour>
-							<tns:sequenceIcbs>14</tns:sequenceIcbs>
-							<tns:cashboxIcbs>AA</tns:cashboxIcbs>
-						</tns:otherLoanSetRs>
-					</tns:paymentOtherLoanSetRs>
-				</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-3ea68667-084c-43c4-b41f-4eba1c47d354</aud:masterId>
-			<aud:point>MSG_REQ_SRV</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.602</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.602</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description />
-			<aud:errorCode />
-			<aud:message>
-				<audit>
-					<paymentOtherLoanSetRq xmlns="http://www.colpatria.com/esb/services/payment/as/paymentOtherLoanSet/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-						<requestHeader>
-							<esbHeader>
-								<transactionId>1234567890123456789</transactionId>
-								<serviceCode>PAGOLOA01</serviceCode>
-								<requestUser>BDPARRAGB</requestUser>
-								<requestSystem>BVI</requestSystem>
-								<host>1.1.1.1</host>
-								<operationCountry>57</operationCountry>
-								<transactionDate>2017-08-02</transactionDate>
-								<transactionTime>16:16:16</transactionTime>
-								<institutionCode>19</institutionCode>
-								<usernameToken>
-									<userName>sadmin</userName>
-									<password>Desarrollo2010</password>
-								</usernameToken>
-							</esbHeader>
-						</requestHeader>
-						<otherLoanSetRq>
-							<customer>
-								<idType>C</idType>
-								<idNumber>******8746</idNumber>
-							</customer>
-							<originAccount>
-								<originAccountType>1</originAccountType>
-								<originAccountNumber>************8965</originAccountNumber>
-							</originAccount>
-							<loanAccount>
-								<loanType>3</loanType>
-								<loanNumber>******5555</loanNumber>
-							</loanAccount>
-							<amount>10000000.99</amount>
-						</otherLoanSetRq>
-					</paymentOtherLoanSetRq>
+							<tns:listConditions>
+								<tns:conditions>
+									<tns:descriptionCondition>DESC2</tns:descriptionCondition>
+									<tns:valueCondition>10000000.99</tns:valueCondition>
+								</tns:conditions>
+								<tns:conditions>
+									<tns:descriptionCondition>DESC3</tns:descriptionCondition>
+									<tns:valueCondition>10000000.88</tns:valueCondition>
+								</tns:conditions>
+								<tns:conditions>
+									<tns:descriptionCondition>DESC4</tns:descriptionCondition>
+									<tns:valueCondition>10000000.77</tns:valueCondition>
+								</tns:conditions>
+							</tns:listConditions>
+						</tns:termsConditionsAdsGetRs>
+					</tns:productsTermsConditionsAdsGetRs>
 				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
@@ -212,20 +106,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-3ea68667-084c-43c4-b41f-4eba1c47d354</aud:masterId>
+			<aud:masterId>idg752-1843c26d-ca6b-46bb-8f84-3bad9bf13a91</aud:masterId>
 			<aud:point>MSG_REQ_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.602</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.604</aud:endDate>
+			<aud:startDate>2018-07-03T16:58:02.269</aud:startDate>
+			<aud:endDate>2018-07-03T16:58:02.271</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description />
 			<aud:errorCode />
 			<aud:message>
-				<audit>RQ0057019BVI PAGOLOA01             1.1.1.1                                 BDPARRAGB                               2017080216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746001****************    003****************    00000001000000099</audit>
+				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -236,20 +130,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-3ea68667-084c-43c4-b41f-4eba1c47d354</aud:masterId>
+			<aud:masterId>idg752-1843c26d-ca6b-46bb-8f84-3bad9bf13a91</aud:masterId>
 			<aud:point>MSG_RES_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.604</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.610</aud:endDate>
+			<aud:startDate>2018-07-03T16:58:02.271</aud:startDate>
+			<aud:endDate>2018-07-03T16:58:02.276</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description>Transaccion Error.</aud:description>
 			<aud:errorCode>NPC</aud:errorCode>
 			<aud:message>
-				<audit>RS0057019BVI PAGOLOA01             1.1.1.1                                 BDPARRAGB                               2017082816161620171102153922NPC  Transaccion Error.                                                                                                                                                                                          1234567890123456789                              *************00000000000000000000000</audit>
+				<audit>RS0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017082816161620171102153922NPC  Transaccion Error.                                                                                                                                                                                          1234567890123456789                              *************0000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -259,21 +153,21 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-3ea68667-084c-43c4-b41f-4eba1c47d354</aud:masterId>
+			<aud:masterId>idg752-1843c26d-ca6b-46bb-8f84-3bad9bf13a91</aud:masterId>
 			<aud:point>MSG_RES_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGOLOA01</aud:serviceCode>
-			<aud:operationDP>paymentOtherLoanSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:47:40.602</aud:startDate>
-			<aud:endDate>2018-06-19T18:47:40.613</aud:endDate>
+			<aud:startDate>2018-07-03T16:58:02.269</aud:startDate>
+			<aud:endDate>2018-07-03T16:58:02.278</aud:endDate>
 			<aud:state>03</aud:state>
 			<aud:description>Transaccion Error.</aud:description>
 			<aud:errorCode>NPC</aud:errorCode>
 			<aud:message>
 				<audit>
-					<tns:paymentOtherLoanSetRs xmlns:tns="http://www.colpatria.com/esb/services/payment/as/paymentOtherLoanSet/">
+					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
 						<tns:responseHeader>
 							<tns:status>
 								<tns:statusCode>Fail</tns:statusCode>
@@ -291,65 +185,7 @@
 								<tns:transactionTime>15:39:22</tns:transactionTime>
 							</tns:esbHeader>
 						</tns:responseHeader>
-					</tns:paymentOtherLoanSetRs>
-				</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-3e21fac2-95d0-45e3-b201-8ddaefc0f79f</aud:masterId>
-			<aud:point>MSG_REQ_SRV</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.318</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.318</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description />
-			<aud:errorCode />
-			<aud:message>
-				<audit>
-					<paymentRevolvingCreditSetRq xmlns="http://www.colpatria.com/esb/services/payment/as/paymentRevolvingCreditSet/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-						<requestHeader>
-							<esbHeader>
-								<transactionId>1234567890123456789</transactionId>
-								<serviceCode>PAGRLOA01</serviceCode>
-								<requestUser>BDPARRAGB</requestUser>
-								<requestSystem>BVI</requestSystem>
-								<host>1.1.1.1</host>
-								<operationCountry>57</operationCountry>
-								<transactionDate>2017-08-01</transactionDate>
-								<transactionTime>16:16:16</transactionTime>
-								<institutionCode>19</institutionCode>
-								<usernameToken>
-									<userName>sadmin</userName>
-									<password>Desarrollo2010</password>
-								</usernameToken>
-							</esbHeader>
-						</requestHeader>
-						<revolvingCreditSetRq>
-							<customer>
-								<idType>C</idType>
-								<idNumber>******8746</idNumber>
-							</customer>
-							<originAccount>
-								<originAccountType>1</originAccountType>
-								<originAccountNumber>************8965</originAccountNumber>
-							</originAccount>
-							<loanAccount>
-								<loanType>3</loanType>
-								<loanNumber>******5555</loanNumber>
-							</loanAccount>
-							<amount>10000000.99</amount>
-						</revolvingCreditSetRq>
-					</paymentRevolvingCreditSetRq>
+					</tns:productsTermsConditionsAdsGetRs>
 				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
@@ -361,20 +197,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-3e21fac2-95d0-45e3-b201-8ddaefc0f79f</aud:masterId>
+			<aud:masterId>idg752-64b01577-f926-4991-b172-84a3a27c5e58</aud:masterId>
 			<aud:point>MSG_REQ_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.318</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.321</aud:endDate>
+			<aud:startDate>2018-07-03T17:11:22.413</aud:startDate>
+			<aud:endDate>2018-07-03T17:11:22.414</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description />
 			<aud:errorCode />
 			<aud:message>
-				<audit>RQ0057019BVI PAGRLOA01             1.1.1.1                                 BDPARRAGB                               2017080116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746001****************    003****************    00000001000000099</audit>
+				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -385,20 +221,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-3e21fac2-95d0-45e3-b201-8ddaefc0f79f</aud:masterId>
+			<aud:masterId>idg752-64b01577-f926-4991-b172-84a3a27c5e58</aud:masterId>
 			<aud:point>MSG_RES_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.321</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.326</aud:endDate>
+			<aud:startDate>2018-07-03T17:11:22.414</aud:startDate>
+			<aud:endDate>2018-07-03T17:11:22.420</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description>Transaccion Exitosa.</aud:description>
 			<aud:errorCode>SUC</aud:errorCode>
 			<aud:message>
-				<audit>RS0057019BVI PAGRLOA01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exitosa.                                                                                                                                                                                        993456545678909                                 C*************87472018010112101000014  AA</audit>
+				<audit>RS0057019BVI QRYLADS01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exitosa.                                                                                                                                                                                        993456545678909                                 C*************8747                         DESC2001000000099                         DESC3001000000088                         DESC4001000000077                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -408,21 +244,21 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-3e21fac2-95d0-45e3-b201-8ddaefc0f79f</aud:masterId>
+			<aud:masterId>idg752-64b01577-f926-4991-b172-84a3a27c5e58</aud:masterId>
 			<aud:point>MSG_RES_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.318</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.328</aud:endDate>
+			<aud:startDate>2018-07-03T17:11:22.413</aud:startDate>
+			<aud:endDate>2018-07-03T17:11:22.469</aud:endDate>
 			<aud:state>02</aud:state>
 			<aud:description />
 			<aud:errorCode>200</aud:errorCode>
 			<aud:message>
 				<audit>
-					<tns:paymentRevolvingCreditSetRs xmlns:tns="http://www.colpatria.com/esb/services/payment/as/paymentRevolvingCreditSet/">
+					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
 						<tns:responseHeader>
 							<tns:status>
 								<tns:statusCode>Success</tns:statusCode>
@@ -433,75 +269,27 @@
 								<tns:transactionTime>14:32:29</tns:transactionTime>
 							</tns:esbHeader>
 						</tns:responseHeader>
-						<tns:revolvingCreditSetRs>
+						<tns:termsConditionsAdsGetRs>
 							<tns:customer>
 								<tns:idType>C</tns:idType>
 								<tns:idNumber>******8747</tns:idNumber>
 							</tns:customer>
-							<tns:postDate>2018-01-01</tns:postDate>
-							<tns:postHour>12:10:10</tns:postHour>
-							<tns:sequenceIcbs>14</tns:sequenceIcbs>
-							<tns:cashboxIcbs>AA</tns:cashboxIcbs>
-						</tns:revolvingCreditSetRs>
-					</tns:paymentRevolvingCreditSetRs>
-				</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-4db05b22-e958-4213-8894-936d65c39722</aud:masterId>
-			<aud:point>MSG_REQ_SRV</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.419</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.419</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description />
-			<aud:errorCode />
-			<aud:message>
-				<audit>
-					<paymentRevolvingCreditSetRq xmlns="http://www.colpatria.com/esb/services/payment/as/paymentRevolvingCreditSet/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
-						<requestHeader>
-							<esbHeader>
-								<transactionId>1234567890123456789</transactionId>
-								<serviceCode>PAGRLOA01</serviceCode>
-								<requestUser>BDPARRAGB</requestUser>
-								<requestSystem>BVI</requestSystem>
-								<host>1.1.1.1</host>
-								<operationCountry>57</operationCountry>
-								<transactionDate>2017-08-02</transactionDate>
-								<transactionTime>16:16:16</transactionTime>
-								<institutionCode>19</institutionCode>
-								<usernameToken>
-									<userName>sadmin</userName>
-									<password>Desarrollo2010</password>
-								</usernameToken>
-							</esbHeader>
-						</requestHeader>
-						<revolvingCreditSetRq>
-							<customer>
-								<idType>C</idType>
-								<idNumber>******8746</idNumber>
-							</customer>
-							<originAccount>
-								<originAccountType>1</originAccountType>
-								<originAccountNumber>************8965</originAccountNumber>
-							</originAccount>
-							<loanAccount>
-								<loanType>3</loanType>
-								<loanNumber>******5555</loanNumber>
-							</loanAccount>
-							<amount>10000000.99</amount>
-						</revolvingCreditSetRq>
-					</paymentRevolvingCreditSetRq>
+							<tns:listConditions>
+								<tns:conditions>
+									<tns:descriptionCondition>DESC2</tns:descriptionCondition>
+									<tns:valueCondition>10000000.99</tns:valueCondition>
+								</tns:conditions>
+								<tns:conditions>
+									<tns:descriptionCondition>DESC3</tns:descriptionCondition>
+									<tns:valueCondition>10000000.88</tns:valueCondition>
+								</tns:conditions>
+								<tns:conditions>
+									<tns:descriptionCondition>DESC4</tns:descriptionCondition>
+									<tns:valueCondition>10000000.77</tns:valueCondition>
+								</tns:conditions>
+							</tns:listConditions>
+						</tns:termsConditionsAdsGetRs>
+					</tns:productsTermsConditionsAdsGetRs>
 				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
@@ -513,20 +301,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-4db05b22-e958-4213-8894-936d65c39722</aud:masterId>
+			<aud:masterId>idg752-6938a11c-9d1e-4570-950d-3a00104577d6</aud:masterId>
 			<aud:point>MSG_REQ_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.419</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.427</aud:endDate>
+			<aud:startDate>2018-07-03T17:11:22.546</aud:startDate>
+			<aud:endDate>2018-07-03T17:11:22.548</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description />
 			<aud:errorCode />
 			<aud:message>
-				<audit>RQ0057019BVI PAGRLOA01             1.1.1.1                                 BDPARRAGB                               2017080216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746001****************    003****************    00000001000000099</audit>
+				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -537,20 +325,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-4db05b22-e958-4213-8894-936d65c39722</aud:masterId>
+			<aud:masterId>idg752-6938a11c-9d1e-4570-950d-3a00104577d6</aud:masterId>
 			<aud:point>MSG_RES_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.427</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.435</aud:endDate>
+			<aud:startDate>2018-07-03T17:11:22.548</aud:startDate>
+			<aud:endDate>2018-07-03T17:11:22.556</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description>Transaccion Error.</aud:description>
 			<aud:errorCode>NPC</aud:errorCode>
 			<aud:message>
-				<audit>RS0057019BVI PAGRLOA01             1.1.1.1                                 BDPARRAGB                               2017082816161620171102153922NPC  Transaccion Error.                                                                                                                                                                                          1234567890123456789                              *************00000000000000000000000</audit>
+				<audit>RS0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017082816161620171102153922NPC  Transaccion Error.                                                                                                                                                                                          1234567890123456789                              *************0000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -560,21 +348,21 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-4db05b22-e958-4213-8894-936d65c39722</aud:masterId>
+			<aud:masterId>idg752-6938a11c-9d1e-4570-950d-3a00104577d6</aud:masterId>
 			<aud:point>MSG_RES_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>PAGRLOA01</aud:serviceCode>
-			<aud:operationDP>paymentRevolvingCreditSet</aud:operationDP>
+			<aud:serviceCode>QRYLADS01</aud:serviceCode>
+			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-06-19T18:49:33.419</aud:startDate>
-			<aud:endDate>2018-06-19T18:49:33.439</aud:endDate>
+			<aud:startDate>2018-07-03T17:11:22.546</aud:startDate>
+			<aud:endDate>2018-07-03T17:11:22.559</aud:endDate>
 			<aud:state>03</aud:state>
 			<aud:description>Transaccion Error.</aud:description>
 			<aud:errorCode>NPC</aud:errorCode>
 			<aud:message>
 				<audit>
-					<tns:paymentRevolvingCreditSetRs xmlns:tns="http://www.colpatria.com/esb/services/payment/as/paymentRevolvingCreditSet/">
+					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
 						<tns:responseHeader>
 							<tns:status>
 								<tns:statusCode>Fail</tns:statusCode>
@@ -592,7 +380,7 @@
 								<tns:transactionTime>15:39:22</tns:transactionTime>
 							</tns:esbHeader>
 						</tns:responseHeader>
-					</tns:paymentRevolvingCreditSetRs>
+					</tns:productsTermsConditionsAdsGetRs>
 				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>

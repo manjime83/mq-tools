@@ -72,7 +72,7 @@ public class AS400SERVER implements Runnable {
 
 					String service = null;
 					try {
-						service = request.substring(13, 22);
+						service = request.substring(13, 22).trim();
 					} catch (StringIndexOutOfBoundsException e) {
 						e.printStackTrace();
 						continue;

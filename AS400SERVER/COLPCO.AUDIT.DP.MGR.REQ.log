@@ -1,21 +1,60 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-a3b2acce-d2ca-4f12-959b-129a2f53fe14</aud:masterId>
-			<aud:point>MSG_REQ_EXT</aud:point>
+			<aud:masterId>idg-26d4415c-44e0-4b9b-b251-6669f1cb4110</aud:masterId>
+			<aud:point>MSG_REQ_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T16:58:02.174</aud:startDate>
-			<aud:endDate>2018-07-03T16:58:02.176</aud:endDate>
+			<aud:startDate>2018-12-18T11:55:04.893</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:04.893</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description />
 			<aud:errorCode />
 			<aud:message>
-				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
+				<audit>
+					<productsDacLockUnlockingSetRq xmlns="http://www.colpatria.com/esb/services/products/as/productsDacLockUnlockingSet/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+						<requestHeader>
+							<esbHeader>
+								<transactionId>1234567890123456789</transactionId>
+								<serviceCode>QDACBYD01</serviceCode>
+								<requestUser>BDPARRAGB</requestUser>
+								<requestSystem>BVI</requestSystem>
+								<host>1.1.1.1</host>
+								<operationCountry>57</operationCountry>
+								<transactionDate>2018-12-01</transactionDate>
+								<transactionTime>16:16:16</transactionTime>
+								<institutionCode>19</institutionCode>
+								<usernameToken>
+									<userName>sadmin</userName>
+									<password>Desarrollo2010</password>
+								</usernameToken>
+							</esbHeader>
+						</requestHeader>
+						<dacLockUnlockingSetRq>
+							<customer>
+								<idType>C</idType>
+								<idNumber>*****4852</idNumber>
+							</customer>
+							<agreements>
+								<agreement>
+									<code>1</code>
+									<obligationNumber>******5641</obligationNumber>
+									<status>A</status>
+									<blockingDays>10</blockingDays>
+								</agreement>
+								<agreement>
+									<code>231</code>
+									<obligationNumber>***1212</obligationNumber>
+									<status>N</status>
+									<blockingDays>1</blockingDays>
+								</agreement>
+							</agreements>
+						</dacLockUnlockingSetRq>
+					</productsDacLockUnlockingSetRq>
+				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -26,20 +65,44 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-a3b2acce-d2ca-4f12-959b-129a2f53fe14</aud:masterId>
-			<aud:point>MSG_RES_EXT</aud:point>
+			<aud:masterId>idg-26d4415c-44e0-4b9b-b251-6669f1cb4110</aud:masterId>
+			<aud:point>MSG_REQ_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T16:58:02.176</aud:startDate>
-			<aud:endDate>2018-07-03T16:58:02.181</aud:endDate>
+			<aud:startDate>2018-12-18T11:55:04.893</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.684</aud:endDate>
 			<aud:state>01</aud:state>
-			<aud:description>Transaccion Exitosa.</aud:description>
+			<aud:description />
+			<aud:errorCode />
+			<aud:message>
+				<audit>RQ0057019BVI QDACBYD01             1.1.1.1                                 BDPARRAGB                               2018120116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************485200001****************    A1000231****************    N0100000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000</audit>
+			</aud:message>
+			<aud:auditFlag>1</aud:auditFlag>
+			<aud:fullAudit>1</aud:fullAudit>
+		</aud:auditCreateRq>
+	</soapenv:Body>
+</soapenv:Envelope>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
+	<soapenv:Header />
+	<soapenv:Body>
+		<aud:auditCreateRq>
+			<aud:masterId>idg-26d4415c-44e0-4b9b-b251-6669f1cb4110</aud:masterId>
+			<aud:point>MSG_RES_EXT</aud:point>
+			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
+			<aud:userRq>BDPARRAGB</aud:userRq>
+			<aud:consumerApp>BVI</aud:consumerApp>
+			<aud:startDate>2018-12-18T11:55:05.684</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.728</aud:endDate>
+			<aud:state>01</aud:state>
+			<aud:description>Transaccion Exito.</aud:description>
 			<aud:errorCode>SUC</aud:errorCode>
 			<aud:message>
-				<audit>RS0057019BVI QRYLADS01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exitosa.                                                                                                                                                                                        993456545678909                                 C*************8747                         DESC2001000000099                         DESC3001000000088                         DESC4001000000077                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
+				<audit>RS0057019BVI QDACBYD01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exito.                                                                                                                                                                                          993456545678909                                 C*************012300001****************    A10AC01Error en DAC                            00231****************    N01BG99Completo                                00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -49,21 +112,21 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-a3b2acce-d2ca-4f12-959b-129a2f53fe14</aud:masterId>
+			<aud:masterId>idg-26d4415c-44e0-4b9b-b251-6669f1cb4110</aud:masterId>
 			<aud:point>MSG_RES_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T16:58:02.174</aud:startDate>
-			<aud:endDate>2018-07-03T16:58:02.183</aud:endDate>
+			<aud:startDate>2018-12-18T11:55:04.893</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.813</aud:endDate>
 			<aud:state>02</aud:state>
 			<aud:description />
 			<aud:errorCode>200</aud:errorCode>
 			<aud:message>
 				<audit>
-					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
+					<tns:productsDacLockUnlockingSetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsDacLockUnlockingSet/">
 						<tns:responseHeader>
 							<tns:status>
 								<tns:statusCode>Success</tns:statusCode>
@@ -74,27 +137,94 @@
 								<tns:transactionTime>14:32:29</tns:transactionTime>
 							</tns:esbHeader>
 						</tns:responseHeader>
-						<tns:termsConditionsAdsGetRs>
+						<tns:dacLockUnlockingSetRs>
 							<tns:customer>
 								<tns:idType>C</tns:idType>
-								<tns:idNumber>******8747</tns:idNumber>
+								<tns:idNumber>123</tns:idNumber>
 							</tns:customer>
-							<tns:listConditions>
-								<tns:conditions>
-									<tns:descriptionCondition>DESC2</tns:descriptionCondition>
-									<tns:valueCondition>10000000.99</tns:valueCondition>
-								</tns:conditions>
-								<tns:conditions>
-									<tns:descriptionCondition>DESC3</tns:descriptionCondition>
-									<tns:valueCondition>10000000.88</tns:valueCondition>
-								</tns:conditions>
-								<tns:conditions>
-									<tns:descriptionCondition>DESC4</tns:descriptionCondition>
-									<tns:valueCondition>10000000.77</tns:valueCondition>
-								</tns:conditions>
-							</tns:listConditions>
-						</tns:termsConditionsAdsGetRs>
-					</tns:productsTermsConditionsAdsGetRs>
+							<tns:agreements>
+								<tns:agreement>
+									<tns:code>1</tns:code>
+									<tns:obligationNumber>******5641</tns:obligationNumber>
+									<tns:status>A</tns:status>
+									<tns:blockingDays>10</tns:blockingDays>
+									<tns:errorCode>AC01</tns:errorCode>
+									<tns:errorMessage>Error en DAC</tns:errorMessage>
+								</tns:agreement>
+								<tns:agreement>
+									<tns:code>231</tns:code>
+									<tns:obligationNumber>***1212</tns:obligationNumber>
+									<tns:status>N</tns:status>
+									<tns:blockingDays>1</tns:blockingDays>
+									<tns:errorCode>BG99</tns:errorCode>
+									<tns:errorMessage>Completo</tns:errorMessage>
+								</tns:agreement>
+							</tns:agreements>
+						</tns:dacLockUnlockingSetRs>
+					</tns:productsDacLockUnlockingSetRs>
+				</audit>
+			</aud:message>
+			<aud:auditFlag>1</aud:auditFlag>
+			<aud:fullAudit>1</aud:fullAudit>
+		</aud:auditCreateRq>
+	</soapenv:Body>
+</soapenv:Envelope>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
+	<soapenv:Body>
+		<aud:auditCreateRq>
+			<aud:masterId>idg-d30d00f1-ff62-4a64-b720-6669f1cbe54f</aud:masterId>
+			<aud:point>MSG_REQ_SRV</aud:point>
+			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
+			<aud:userRq>BDPARRAGB</aud:userRq>
+			<aud:consumerApp>BVI</aud:consumerApp>
+			<aud:startDate>2018-12-18T11:55:05.964</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.964</aud:endDate>
+			<aud:state>01</aud:state>
+			<aud:description />
+			<aud:errorCode />
+			<aud:message>
+				<audit>
+					<productsDacLockUnlockingSetRq xmlns="http://www.colpatria.com/esb/services/products/as/productsDacLockUnlockingSet/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+						<requestHeader>
+							<esbHeader>
+								<transactionId>1234567890123456789</transactionId>
+								<serviceCode>QDACBYD01</serviceCode>
+								<requestUser>BDPARRAGB</requestUser>
+								<requestSystem>BVI</requestSystem>
+								<host>1.1.1.1</host>
+								<operationCountry>57</operationCountry>
+								<transactionDate>2018-12-02</transactionDate>
+								<transactionTime>16:16:16</transactionTime>
+								<institutionCode>19</institutionCode>
+								<usernameToken>
+									<userName>sadmin</userName>
+									<password>Desarrollo2010</password>
+								</usernameToken>
+							</esbHeader>
+						</requestHeader>
+						<dacLockUnlockingSetRq>
+							<customer>
+								<idType>C</idType>
+								<idNumber>*****4852</idNumber>
+							</customer>
+							<agreements>
+								<agreement>
+									<code>1</code>
+									<obligationNumber>******5641</obligationNumber>
+									<status>A</status>
+									<blockingDays>10</blockingDays>
+								</agreement>
+								<agreement>
+									<code>231</code>
+									<obligationNumber>***1212</obligationNumber>
+									<status>N</status>
+									<blockingDays>1</blockingDays>
+								</agreement>
+							</agreements>
+						</dacLockUnlockingSetRq>
+					</productsDacLockUnlockingSetRq>
 				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
@@ -106,20 +236,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-1843c26d-ca6b-46bb-8f84-3bad9bf13a91</aud:masterId>
+			<aud:masterId>idg-d30d00f1-ff62-4a64-b720-6669f1cbe54f</aud:masterId>
 			<aud:point>MSG_REQ_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T16:58:02.269</aud:startDate>
-			<aud:endDate>2018-07-03T16:58:02.271</aud:endDate>
+			<aud:startDate>2018-12-18T11:55:05.964</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.978</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description />
 			<aud:errorCode />
 			<aud:message>
-				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
+				<audit>RQ0057019BVI QDACBYD01             1.1.1.1                                 BDPARRAGB                               2018120216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************485200001****************    A1000231****************    N0100000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000****************     0000000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -130,20 +260,20 @@
 	<soapenv:Header />
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-1843c26d-ca6b-46bb-8f84-3bad9bf13a91</aud:masterId>
+			<aud:masterId>idg-d30d00f1-ff62-4a64-b720-6669f1cbe54f</aud:masterId>
 			<aud:point>MSG_RES_EXT</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T16:58:02.271</aud:startDate>
-			<aud:endDate>2018-07-03T16:58:02.276</aud:endDate>
+			<aud:startDate>2018-12-18T11:55:05.978</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.986</aud:endDate>
 			<aud:state>01</aud:state>
 			<aud:description>Transaccion Error.</aud:description>
-			<aud:errorCode>NPC</aud:errorCode>
+			<aud:errorCode>ERR</aud:errorCode>
 			<aud:message>
-				<audit>RS0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017082816161620171102153922NPC  Transaccion Error.                                                                                                                                                                                          1234567890123456789                              *************0000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
+				<audit>RS0057019BVI QDACBYD01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229ERR  Transaccion Error.                                                                                                                                                                                          993456545678909                                  *************000000000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000****************     00                                            00000</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>
 			<aud:fullAudit>1</aud:fullAudit>
@@ -153,115 +283,31 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
 	<soapenv:Body>
 		<aud:auditCreateRq>
-			<aud:masterId>idg752-1843c26d-ca6b-46bb-8f84-3bad9bf13a91</aud:masterId>
+			<aud:masterId>idg-d30d00f1-ff62-4a64-b720-6669f1cbe54f</aud:masterId>
 			<aud:point>MSG_RES_SRV</aud:point>
 			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
+			<aud:serviceCode>QDACBYD01</aud:serviceCode>
+			<aud:operationDP>productsDacLockUnlockingSet</aud:operationDP>
 			<aud:userRq>BDPARRAGB</aud:userRq>
 			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T16:58:02.269</aud:startDate>
-			<aud:endDate>2018-07-03T16:58:02.278</aud:endDate>
+			<aud:startDate>2018-12-18T11:55:05.964</aud:startDate>
+			<aud:endDate>2018-12-18T11:55:05.991</aud:endDate>
 			<aud:state>03</aud:state>
 			<aud:description>Transaccion Error.</aud:description>
-			<aud:errorCode>NPC</aud:errorCode>
+			<aud:errorCode>ERR</aud:errorCode>
 			<aud:message>
 				<audit>
-					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
+					<tns:productsDacLockUnlockingSetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsDacLockUnlockingSet/">
 						<tns:responseHeader>
 							<tns:status>
 								<tns:statusCode>Fail</tns:statusCode>
 								<tns:statusDesc>Provider Business Exception</tns:statusDesc>
 								<tns:error>
 									<tns:origin>AS400</tns:origin>
-									<tns:errorCode>NPC</tns:errorCode>
+									<tns:errorCode>ERR</tns:errorCode>
 									<tns:severity>ERROR</tns:severity>
 									<tns:description>Transaccion Error.</tns:description>
 								</tns:error>
-							</tns:status>
-							<tns:esbHeader>
-								<tns:transactionId>1234567890123456789</tns:transactionId>
-								<tns:transactionDate>2017-11-02</tns:transactionDate>
-								<tns:transactionTime>15:39:22</tns:transactionTime>
-							</tns:esbHeader>
-						</tns:responseHeader>
-					</tns:productsTermsConditionsAdsGetRs>
-				</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Header />
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-64b01577-f926-4991-b172-84a3a27c5e58</aud:masterId>
-			<aud:point>MSG_REQ_EXT</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T17:11:22.413</aud:startDate>
-			<aud:endDate>2018-07-03T17:11:22.414</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description />
-			<aud:errorCode />
-			<aud:message>
-				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080116161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Header />
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-64b01577-f926-4991-b172-84a3a27c5e58</aud:masterId>
-			<aud:point>MSG_RES_EXT</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T17:11:22.414</aud:startDate>
-			<aud:endDate>2018-07-03T17:11:22.420</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description>Transaccion Exitosa.</aud:description>
-			<aud:errorCode>SUC</aud:errorCode>
-			<aud:message>
-				<audit>RS0057019BVI QRYLADS01             10.127.1.2                              JUMP IOS                                2017071714450020171031143229SUC  Transaccion Exitosa.                                                                                                                                                                                        993456545678909                                 C*************8747                         DESC2001000000099                         DESC3001000000088                         DESC4001000000077                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-64b01577-f926-4991-b172-84a3a27c5e58</aud:masterId>
-			<aud:point>MSG_RES_SRV</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T17:11:22.413</aud:startDate>
-			<aud:endDate>2018-07-03T17:11:22.469</aud:endDate>
-			<aud:state>02</aud:state>
-			<aud:description />
-			<aud:errorCode>200</aud:errorCode>
-			<aud:message>
-				<audit>
-					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
-						<tns:responseHeader>
-							<tns:status>
-								<tns:statusCode>Success</tns:statusCode>
 							</tns:status>
 							<tns:esbHeader>
 								<tns:transactionId>993456545678909</tns:transactionId>
@@ -269,118 +315,7 @@
 								<tns:transactionTime>14:32:29</tns:transactionTime>
 							</tns:esbHeader>
 						</tns:responseHeader>
-						<tns:termsConditionsAdsGetRs>
-							<tns:customer>
-								<tns:idType>C</tns:idType>
-								<tns:idNumber>******8747</tns:idNumber>
-							</tns:customer>
-							<tns:listConditions>
-								<tns:conditions>
-									<tns:descriptionCondition>DESC2</tns:descriptionCondition>
-									<tns:valueCondition>10000000.99</tns:valueCondition>
-								</tns:conditions>
-								<tns:conditions>
-									<tns:descriptionCondition>DESC3</tns:descriptionCondition>
-									<tns:valueCondition>10000000.88</tns:valueCondition>
-								</tns:conditions>
-								<tns:conditions>
-									<tns:descriptionCondition>DESC4</tns:descriptionCondition>
-									<tns:valueCondition>10000000.77</tns:valueCondition>
-								</tns:conditions>
-							</tns:listConditions>
-						</tns:termsConditionsAdsGetRs>
-					</tns:productsTermsConditionsAdsGetRs>
-				</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Header />
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-6938a11c-9d1e-4570-950d-3a00104577d6</aud:masterId>
-			<aud:point>MSG_REQ_EXT</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T17:11:22.546</aud:startDate>
-			<aud:endDate>2018-07-03T17:11:22.548</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description />
-			<aud:errorCode />
-			<aud:message>
-				<audit>RQ0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017080216161600000000000000                                                                                                         sadmin                                  Desarrollo2010                                                  1234567890123456789                             C*************8746</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Header />
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-6938a11c-9d1e-4570-950d-3a00104577d6</aud:masterId>
-			<aud:point>MSG_RES_EXT</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T17:11:22.548</aud:startDate>
-			<aud:endDate>2018-07-03T17:11:22.556</aud:endDate>
-			<aud:state>01</aud:state>
-			<aud:description>Transaccion Error.</aud:description>
-			<aud:errorCode>NPC</aud:errorCode>
-			<aud:message>
-				<audit>RS0057019BVI QRYLADS01             1.1.1.1                                 BDPARRAGB                               2017082816161620171102153922NPC  Transaccion Error.                                                                                                                                                                                          1234567890123456789                              *************0000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000                              000000000000</audit>
-			</aud:message>
-			<aud:auditFlag>1</aud:auditFlag>
-			<aud:fullAudit>1</aud:fullAudit>
-		</aud:auditCreateRq>
-	</soapenv:Body>
-</soapenv:Envelope>
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:aud="http://www.colpatria.com/esb/services/commons/as/auditCreate/">
-	<soapenv:Body>
-		<aud:auditCreateRq>
-			<aud:masterId>idg752-6938a11c-9d1e-4570-950d-3a00104577d6</aud:masterId>
-			<aud:point>MSG_RES_SRV</aud:point>
-			<aud:globalTrxId>1234567890123456789</aud:globalTrxId>
-			<aud:serviceCode>QRYLADS01</aud:serviceCode>
-			<aud:operationDP>productsTermsConditionsAdsGet</aud:operationDP>
-			<aud:userRq>BDPARRAGB</aud:userRq>
-			<aud:consumerApp>BVI</aud:consumerApp>
-			<aud:startDate>2018-07-03T17:11:22.546</aud:startDate>
-			<aud:endDate>2018-07-03T17:11:22.559</aud:endDate>
-			<aud:state>03</aud:state>
-			<aud:description>Transaccion Error.</aud:description>
-			<aud:errorCode>NPC</aud:errorCode>
-			<aud:message>
-				<audit>
-					<tns:productsTermsConditionsAdsGetRs xmlns:tns="http://www.colpatria.com/esb/services/products/as/productsTermsConditionsAdsGet/">
-						<tns:responseHeader>
-							<tns:status>
-								<tns:statusCode>Fail</tns:statusCode>
-								<tns:statusDesc>Provider Business Exception</tns:statusDesc>
-								<tns:error>
-									<tns:origin>AS400</tns:origin>
-									<tns:errorCode>NPC</tns:errorCode>
-									<tns:severity>ERROR</tns:severity>
-									<tns:description>Transaccion Error.</tns:description>
-								</tns:error>
-							</tns:status>
-							<tns:esbHeader>
-								<tns:transactionId>1234567890123456789</tns:transactionId>
-								<tns:transactionDate>2017-11-02</tns:transactionDate>
-								<tns:transactionTime>15:39:22</tns:transactionTime>
-							</tns:esbHeader>
-						</tns:responseHeader>
-					</tns:productsTermsConditionsAdsGetRs>
+					</tns:productsDacLockUnlockingSetRs>
 				</audit>
 			</aud:message>
 			<aud:auditFlag>1</aud:auditFlag>

@@ -27,8 +27,6 @@ import com.ibm.mq.constants.MQConstants;
 public class LogDump implements Runnable {
 
 	private static final Namespace env = Namespace.getNamespace("env", "http://schemas.xmlsoap.org/soap/envelope/");
-	private static final Namespace aud = Namespace.getNamespace("aud",
-			"http://www.colpatria.com/esb/services/commons/as/auditCreate/");
 
 	private static final XMLOutputter prettyOutputter = new XMLOutputter(
 			Format.getPrettyFormat().setOmitDeclaration(true).setIndent("\t"));
@@ -54,7 +52,7 @@ public class LogDump implements Runnable {
 			MQEnvironment.properties.put(MQConstants.TRANSPORT_PROPERTY, MQConstants.TRANSPORT_MQSERIES);
 
 			queueManagerName = properties.getProperty("queue.manager");
-			requestQueueName = "COLPCO.AUDIT.DP.MGR.REQ";
+			requestQueueName = "<queue name here>";
 		} catch (IOException e) {
 			System.err.println(e.getMessage());
 		}
@@ -84,15 +82,14 @@ public class LogDump implements Runnable {
 
 					Document request = new SAXBuilder().build(new StringReader(str));
 
-					Element messageElement = request.getRootElement().getChild("Body", env)
-							.getChild("auditCreateRq", aud).getChild("message", aud);
+					Element messageElement = request.getRootElement().getChild("Body", env);
 					Document message = new SAXBuilder().build(new StringReader(messageElement.getText()));
 					messageElement.removeContent();
 					messageElement.addContent(message.getRootElement().detach());
 
 					String prettyRequest = prettyOutputter.outputString(request);
 					
-					File logFile = new File("COLPCO.AUDIT.DP.MGR.REQ.log");
+					File logFile = new File("output.log");
 					FileUtils.writeStringToFile(logFile, prettyRequest, "UTF-8", true);
 				} catch (IOException e) {
 					e.printStackTrace();
